@@ -19,27 +19,21 @@
 
         totalSalary = basicSalary
 
-        if (getRadioValue("rdoDiscipline") === "FALSE") {
-
-            if ((itemsSold >= 1) && (itemsSold <= 3)) {
-                commission = commission13;
-            }
-            else if ((itemsSold >= 4) && (itemsSold <= 6)) {
-                commission = commission46;
-            }
-            else if (itemsSold >= 7) {
-                commission = commission7;
-            }
-            else {
-                commission = 0;
-            }
+        if ((itemsSold >= 1) && (itemsSold <= 3)) {
+            commission = commission13;
+        }
+        else if ((itemsSold >= 4) && (itemsSold <= 6)) {
+            commission = commission46;
+        }
+        else if (itemsSold >= 7) {
+            commission = commission7;
         }
         else {
-                commission = 0;
+            commission = 0;
         }
 
         totalSalary = totalSalary + (itemsSold * commission);
         alert("Your total salary is $" + totalSalary);
     }
 
-} )();
+})();
