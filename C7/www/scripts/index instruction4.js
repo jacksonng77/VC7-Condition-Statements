@@ -17,7 +17,7 @@
         commission46 = parseFloat($("#txtCommission46").val());
         commission7 = parseFloat($("#txtCommission7").val());
 
-        totalSalary = basicSalary
+        totalSalary = basicSalary;
 
         if (getRadioValue("rdoDiscipline") === "FALSE") {
 
